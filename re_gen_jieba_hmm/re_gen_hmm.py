@@ -3,7 +3,7 @@ import json
 
 # 读取自己准备好的词典，用词典里的数据进行统计
 # 词典的格式和标准的jieba词典的格式相同 都是 “词语 词频 词性”
-with open('jieba.dict.utf8', 'r', encoding='utf-8') as handle:
+with open('jieba_userdict.txt', 'r', encoding='utf-8') as handle:
     text = handle.readlines()
 
 
