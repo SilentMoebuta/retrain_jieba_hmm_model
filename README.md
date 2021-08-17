@@ -12,6 +12,8 @@ re-train the hmm model of jieba to inhance the seg performance.
 ```
 import myjieba as jieba
 
+rejieba.set_dictionary('jieba_userdict.txt')
+
 text = '南京市长江大桥'
 print(','.join(jieba.cut(text)).split(','))
 ```
