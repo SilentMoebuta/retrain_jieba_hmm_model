@@ -2,6 +2,7 @@
 re-train the hmm model of jieba to inhance the seg performance.  
 通过添加用户词典可以提高jieba分词的效果  
 通过替换hmm模型可以略微提高jieba分词的效果  
+在对用户词典进行统计后，可以重新统计hmm模型中的发射概率（trans矩阵没有改变），得到的数据可以替换进原来的jieba hmm模型中。
 
 # 使用
 1.进入re_gen_jieba_hmm，运行re_gen_hmm.py，读取user dict的数据，生成新的hmm model文件（因涉及保密，目前上传的user dict并不完整，请自备数据）  
