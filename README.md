@@ -7,7 +7,14 @@ re-train the hmm model of jieba to inhance the seg performance.
 # 使用
 1.进入re_gen_jieba_hmm，运行re_gen_hmm.py，读取user dict的数据，生成新的hmm model文件（因涉及保密，目前上传的user dict并不完整，请自备数据）  
 2.将生成的prob_emit.py文件替换掉../jieba/finalseg/prob_emit.py文件  
-3.按照jieba给出的安装方式进行安装：使用setup进行安装或者直接将jieba文件夹放在项目目录中调用（本例中展示直接调用的情形）  
+3.按照jieba给出的安装方式进行安装：使用setup进行安装或者直接将jieba文件夹放在项目目录中调用  
+4.可以将原项目中的jieba文件夹重命名为myjieba，放入自己的项目目录中，并用重新生成的hmm emit probs文件替换原有文件。这样使用最为方便。调用代码如下:  
+```
+import myjieba as jieba
+
+text = '南京市长江大桥'
+print(','.join(jieba.cut(text)).split(','))
+```
 
 # 效果对比
 ```
