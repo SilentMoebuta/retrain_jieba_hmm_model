@@ -4,9 +4,9 @@ re-train the hmm model of jieba to inhance the seg performance.
 通过替换hmm模型可以略微提高jieba分词的效果
 
 # 使用
-1.运行re_gen_hmm.py，读取user dict的数据，生成新的hmm model文件
-2.将生成的prob_emit.py文件替换掉../jieba/finalseg/prob_emit.py文件
-3.按照jieba的安装方式进行安装，或者直接放在当前目录中调用
+1.运行re_gen_hmm.py，读取user dict的数据，生成新的hmm model文件  
+2.将生成的prob_emit.py文件替换掉../jieba/finalseg/prob_emit.py文件  
+3.按照jieba的安装方式进行安装，或者直接放在当前目录中调用  
 
 # 效果对比
 ```
