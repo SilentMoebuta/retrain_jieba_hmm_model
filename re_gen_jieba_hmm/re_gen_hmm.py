@@ -23,7 +23,7 @@ def res_merge(ab):
             res.append(ab[i])
     return res
 
-
+# 用例中的结尾都是n因此按照' n\n'来做了strip，实际上不一定是n
 text = [x.strip(' n\n').split(' ') for x in text]
 word = []
 for x in text:
